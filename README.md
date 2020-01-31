@@ -1,5 +1,5 @@
 ## AR Seamless Plane & Human Occlusion
-Unity 2019.3.0f3; 
+Unity 2019.3.0f3;  
 ARFoundation 3.1.0-preview.4; 
 ARKit XR Plugin 3.1.0-preview.4
 
