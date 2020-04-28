@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2119877306467485279}
   - component: {fileID: 7617226645595563419}
   - component: {fileID: 4265350799563496180}
-  - component: {fileID: 5902155227768347495}
   m_Layer: 0
   m_Name: ChangablePlane
   m_TagString: Untagged
@@ -137,16 +136,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_FeatheringWidth: 0.2
---- !u!114 &5902155227768347495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7745950310732246840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bccd7e9729ed7a64e8ae67e2ba05dde4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_material: {fileID: 0}
