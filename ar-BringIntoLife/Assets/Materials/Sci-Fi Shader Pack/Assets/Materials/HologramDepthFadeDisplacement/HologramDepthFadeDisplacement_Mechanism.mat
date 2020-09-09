@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HologramDepthFadeDisplacement_Mechanism
+  m_Shader: {fileID: 4800000, guid: 0df39782d9131394694f71b5f6b689ed, type: 3}
+  m_ShaderKeywords: _INVERT_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Emission1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Hologram:
+        m_Texture: {fileID: 2800000, guid: e271d6848f6de3e43931b172e15f6fe6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: f4a7482aa96e2094b810c1bc3274d515, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Const3: 0.5
+    - _Const4: 2
+    - _Const5: 2.45
+    - _DepthPower: 0
+    - _DisplacementPower: 0.474
+    - _DisplacmentPower: 0.447
+    - _Float1: 0.21
+    - _Invert: 1
+    - _NoisePower: 2
+    - _NoiseUVscale: 0.0443
+    - _ObjectHigh: 1.2
+    - _ObjectLow: 535.67
+    - _Power: 1
+    - _Scale: 1
+    - _ShaderHologramDisplacement: 0.534
+    - _UV: 1
+    - _VertexMovement: 1
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 5.605291, g: 5.194634, b: 0.2908406, a: 0}
+    - _EmissionColor1: {r: 0, g: 0, b: 0, a: 0}
+    - _FirstColor: {r: 1.7824347, g: 0.23765798, b: 0, a: 0}
+    - _SecondColor: {r: 1.3350785, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
