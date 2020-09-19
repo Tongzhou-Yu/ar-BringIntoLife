@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.kyrylokuzyk.arfoundationremote": "https://kuzykkirill:gXfNFPSZ1sfx3PsiMxPz@gitlab.com/kuzykkirill/arfoundationremote.git#c85da0b0dd1678e16dcbeceda7ddf20edaca69ab",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.collab-proxy": "1.3.8",
     "com.unity.ide.rider": "1.2.1",
@@ -10,8 +11,9 @@
     "com.unity.textmeshpro": "3.0.0-preview.1",
     "com.unity.timeline": "1.2.10",
     "com.unity.ugui": "1.0.0",
-    "com.unity.xr.arfoundation": "4.0.0-preview.1",
+    "com.unity.xr.arfoundation": "4.0.8",
     "com.unity.xr.arkit": "4.0.0-preview.1",
+    "com.unity.xr.arkit-face-tracking": "4.0.8",
     "com.unity.xr.interaction.toolkit": "0.9.4-preview",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",

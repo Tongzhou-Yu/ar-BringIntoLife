@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 270440135}
   - component: {fileID: 270440138}
   - component: {fileID: 270440139}
+  - component: {fileID: 270440140}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -272,6 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_RaycastPrefab: {fileID: 0}
 --- !u!114 &270440139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +290,18 @@ MonoBehaviour:
   m_EnvironmentTextureFilterMode: 2
   m_EnvironmentTextureHDR: 1
   m_DebugPrefab: {fileID: 0}
+--- !u!114 &270440140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270440134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b44e47716a9379458875b368c9582cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &293271739
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,10 +761,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7617226645595563419, guid: f61d37a908704cc469ac2d484d19afdc,
-          type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
+      - m_Target: {fileID: 270440140}
+        m_TargetAssemblyTypeName: ARPlaneChanger, Assembly-CSharp
+        m_MethodName: ChangePlane
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2100000, guid: 40e51c565c2efc94f89f15aee1807430,
@@ -1376,10 +1389,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7617226645595563419, guid: f61d37a908704cc469ac2d484d19afdc,
-          type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
+      - m_Target: {fileID: 270440140}
+        m_TargetAssemblyTypeName: ARPlaneChanger, Assembly-CSharp
+        m_MethodName: ChangePlane
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2100000, guid: ecd864785ed43c7419af525f505eafec,

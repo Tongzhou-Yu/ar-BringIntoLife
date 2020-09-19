@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "com.kyrylokuzyk.arfoundationremote": {
+      "version": "https://kuzykkirill:gXfNFPSZ1sfx3PsiMxPz@gitlab.com/kuzykkirill/arfoundationremote.git#c85da0b0dd1678e16dcbeceda7ddf20edaca69ab",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.xr.arfoundation": "3.0.1",
+        "com.unity.xr.arsubsystems": "3.0.0",
+        "com.unity.xr.management": "3.0.4",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0",
+        "com.unity.modules.xr": "1.0.0",
+        "com.unity.modules.vr": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0"
+      },
+      "hash": "c85da0b0dd1678e16dcbeceda7ddf20edaca69ab"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -93,26 +111,37 @@
       }
     },
     "com.unity.xr.arfoundation": {
-      "version": "4.0.0-preview.1",
+      "version": "4.0.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.xr.arsubsystems": "4.0.0-preview.1"
+        "com.unity.xr.arsubsystems": "4.0.8",
+        "com.unity.xr.management": "3.2.13"
       },
       "url": "https://packages.unity.cn"
     },
     "com.unity.xr.arkit": {
-      "version": "4.0.0-preview.1",
+      "version": "4.0.8",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.arsubsystems": "4.0.8",
+        "com.unity.xr.management": "3.2.13"
+      },
+      "url": "https://packages.unity.cn"
+    },
+    "com.unity.xr.arkit-face-tracking": {
+      "version": "4.0.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.xr.arsubsystems": "4.0.0-preview.1",
-        "com.unity.xr.management": "3.0.5"
+        "com.unity.xr.arkit": "4.0.8",
+        "com.unity.xr.arsubsystems": "4.0.8"
       },
       "url": "https://packages.unity.cn"
     },
     "com.unity.xr.arsubsystems": {
-      "version": "4.0.0-preview.1",
+      "version": "4.0.8",
       "depth": 1,
       "source": "registry",
       "dependencies": {

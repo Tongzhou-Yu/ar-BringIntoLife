@@ -1,0 +1,54 @@
+
+
+Installation:
+    1. If git is not installed on your machine, install it from here: https://git-scm.com/downloads
+    2. ARFoundationRemoteInstaller will install AR Foundation Remote from git repository via Package Manager automatically after importing the plugin to Unity.
+    3. If automatic installation fails, please fix all Console errors, then select an Assets/Plugins/ARFoundationRemoteInstaller/Installer.asset object and press InstallPlugin button.
+    4. Install an AR Foundation Plug-in Provider (ARKit XR Plugin, ARCore XR Plugin, etc.) via Package Manager and ENABLE IT in Project Settings -> XR Plug-in Management. 
+        Please choose the version compatible with AR Foundation 3.0.1. (For example, ARKit XR Plugin v3.0.1 or ARCore XR Plugin v3.0.1).
+    5. To enable iOS face tracking, install ARKit Face Tracking 3.0.1 via Package Manager. 
+
+
+How to use:
+    1. Enable AR Foundation Remote provider in Project Settings -> XR Plug-in Management -> PC, Mac & Linux Standalone.
+            This is only needed for Unity versions that support XR Management package v.3.2.10 or newer.
+    2. Switch your project to the appropriate build target and press 'Assets/Plugins/ARFoundationRemoteInstaller/Installer-Install AR Companion app' button.
+            Please ensure correct build target is selected.
+            If your build target requires extension for making builds, add this extension to optionalCompanionAppExtension field.
+            If installation of ARCompanion fails, please fix errors, press DeleteCompanionAppBuildFolder and repeat the installation.
+            Please DO NOT modify sender scenes in Assets/Plugins/ARFoundationRemoteInstaller/Scenes/Senders.
+    3. Run ARCompanion app on your AR device.
+    4. Enter AR Companion app IP in Assets/Plugins/ARFoundationRemoteInstaller/Resources/Settings.asset.
+    5. Run AR scene of your choice in the Editor (for example, PlaneAndCloudPointsExample, FaceMeshExample, FaceIOSBlendshapesExample or ImageTrackingExample scene located at Assets/Plugins/ARFoundationRemoteInstaller/Scenes/Examples).
+            Your AR device will NOT reflect changes made in Unity Editor. ARCompanion app serves only the purpose of sending AR data and touches back to Editor.
+            Please note that all example scenes consist of pure ARFoundation components. No additional setup was needed for these scenes to work with the plugin.
+    6. This warning is harmless and can be ignored in Editor: 'No active UnityEngine.XR.XRInputSubsystem is available'.
+            It's not possible to create XRInputSubsystem in Editor and Unity warns that it's missing.
+            If you get other 'No active SUBSYSTEM_NAME is available' it means the plugin does not currently support this AR Subsystem.
+    7. Leave an honest review on Asset Store and on forum :)
+
+
+FAQ:  
+    Q: How to update the plugin to a newer version?
+    A: Press 'Installer-Un-install Plugin' button, delete the folder 'Assets/Plugins/ARFoundationRemoteInstaller', re-import the plugin, and make a new build of AR Companion app by pressing 'Installer-BuildAndRunCompanionApp' button.
+    
+    Q: Can I build AR Companion app from another (or newly created) project?
+    A: Yes! Please ensure that your project has the same version of Unity and same packages (AR Foundation, AR Subsystems, etc.). 
+    
+    Q: I'm trying to run AR Foundation Samples scenes and input remoting doesn't work in SimpleAR and PlaneOcclusion scenes.
+    A: These scenes use PlaceOnPlane.cs script which has #if UNITY_EDITOR define. Please remove this define to enable touch input in Editor.
+ 
+    Q: How to connect iOS device to macOS Editor by wire?
+    A: Typically, one of the IP addresses displayed in ARCompanion app is an IP of wired connection. Please disable Wi-Fi and there should be one IP left that corresponds to the wired connection.
+    
+    
+Camera background video settings:
+    To change Editor camera background settings, please go to Assets/Plugins/ARFoundationRemoteInstaller/Resources/Settings.asset.
+    Setting higher background image size will result in higher latency and lower frames-per-second.
+    Please make a new AR Companion app build after you change the settings.
+
+
+How to uninstall:
+    1. Press 'Installer-DeleteCompanionAppBuildFolder button.
+    2. Press UnInstallPlugin button.
+    3. Delete the folder: Assets/Plugins/ARFoundationRemoteInstaller.
